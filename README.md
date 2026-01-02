@@ -15,7 +15,7 @@ also being deleted if they did not correspond to an image. This left only 531 im
 the y coordinate, and the number of the class of the particular landmark. The x coordinates existed over a large range, with minimum at 388 and maximum at 971, while the y coordinates having an even greater
 range from 2 to 1000, not showing any particular pattern that is easy for one to detect. 
 ## Approach 
-	The topology I pursued for my solution was using a CNN approach as this was the primary image processing technique we learned in class and I found it to be the best way to identify features in image data, 
+The topology I pursued for my solution was using a CNN approach as this was the primary image processing technique we learned in class and I found it to be the best way to identify features in image data, 
 especially when modified for regression. I pursued three primary approaches for CNN models: a model that did only individual classes (which served as a baseline for the other models’ performance), a single 
 vector output model that would have only one fully connected head to return all the point coordinates in order of class, and a “multi-headed” model with several “heads” of fully connected linear layers at the
 end for each class. Due to my relatively small dataset size, I also decided to try out transfer learning, using pretrained Pytorch models such as Resnet152 by modifying them for regression capabilities, and 
